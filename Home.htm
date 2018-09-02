@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Programming Test</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="Home.css">
+    <script src="Home.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Tittle -->
+    <div class="jumbotron text-center mHeader">
+        <h1>Web Programming Test</h1>
+        <p id="author">By Andres Andrade</p>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Especifíca tus datos personales:</h3>
+            </div>            
+                <div class="panel-body row">
+                    <div class="col-sm-6 form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" class="form-control" id="txtName">
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="lastName">Apellidos:</label>
+                        <input type="text" class="form-control" id="txtLastName">
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="phone">Telefono:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">#</span>
+                            <input type="number" class="form-control" id="txtPhone" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="mail">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="txtMail" aria-describedby="emailHelp" placeholder="Ingrese correo electrónico">
+                        <small id="emailHelp" class="form-text text-muted">Se verifícara la validez del correo.</small>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="sex">Sexo:</label>
+                        <select class="form-control" id="txtSex">
+                            <option>Hombre</option>
+                            <option>Mujer</option>                            
+                          </select>
+                    </div>
+                    <div class="col-sm-6 form-group"></div>
+                    <div class="col-md-12 text-center form-group">
+                        <button type="button" class="btn btn-primary" id="btnSubmit">Guardar</button>
+                    </div>
+
+                    <!-- Validation Message -->
+                    <div class="col-md-12 text-center form-group alert alert-success" id="valMsg"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="mTittle">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p id="mMessage">Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+
+</html>

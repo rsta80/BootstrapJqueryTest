@@ -1,0 +1,18 @@
+#author{
+    text-align: right;
+    padding-right: 5%;
+}
+
+.mHeader{
+    background-color:orange; 
+}
+
+.panel-title{
+    font-size: 30px;
+}
+
+#valMsg{
+    display: none;
+}
+
+
